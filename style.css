@@ -1,0 +1,63 @@
+body {
+  font-family: 'Gowun Dodum', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.info {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.label {
+  width: 80%;
+  min-height: 100px;
+  border: 2px solid black;
+  margin-bottom: 20px;
+  padding: 10px;
+  white-space: pre-wrap;
+  font-size: 20px;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.key {
+  padding: 10px;
+  min-width: 40px;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #000;
+  font-family: 'Gowun Dodum', sans-serif;
+}
+
+.row1 .key { background-color: #ffcccc; }
+.row2 .key { background-color: #ccffcc; }
+.row3 .key { background-color: #ccccff; }
+.row4 .key { background-color: #ffffcc; }
+
+.toggle-key {
+  background-color: #ffffcc;
+  color: black;
+}
+
+.highlight {
+  animation: blink 0.3s ease-in-out;
+}
+
+@keyframes blink {
+  from { background-color: yellow; }
+  to { background-color: inherit; }
+}
